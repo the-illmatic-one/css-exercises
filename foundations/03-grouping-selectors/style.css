@@ -1,0 +1,29 @@
+/* .button-font {
+    font-size: 28px;
+}
+
+.button-yes {
+    background-color: black;
+    color: white;
+}
+
+.button-me {
+    background-color: yellow;
+    color: black;
+} */
+
+.button-yes, .button-me {
+    font-family: Helvetica, "Times New Roman", sans-serif;
+    font-size: 28px;
+}
+
+.button-yes {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.button-me {
+    background-color: yellow;
+    /* color: black;  not needed as black is the default*/
+}
