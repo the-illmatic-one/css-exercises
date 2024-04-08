@@ -7,15 +7,15 @@ body {
   background: pink;
   border: 3px solid blue;
   /* CHANGE ME */
-  padding: 0px;
-  margin: 0px;
+  padding: 32px;
+  margin: 12px;
 }
 
 .two {
   background: lightblue;
   border: 3px solid purple;
   /* CHANGE ME */
-  margin-bottom: 0px;
+  margin-bottom: 48px;
 }
 
 .three {
@@ -23,6 +23,14 @@ body {
   border: 3px solid brown;
   width: 200px;
   /* CHANGE ME */
-  padding: 0px;
-  margin-left: 0px;
+  padding: 32px;
+  margin-left: auto;
+  /* originally I had margin-left 330px which 
+  was slightly off.
+  The solution had auto and I didn't understand it
+  at first. After realising that a div is a block
+  element, then it would usually span the entire
+  width. So setting the margin-left to auto would
+  fill the left margin area with the remaining length
+  of the parent element (600px).*/
 }
