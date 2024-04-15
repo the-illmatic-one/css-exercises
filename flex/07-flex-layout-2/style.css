@@ -19,11 +19,76 @@ body {
 .sidebar {
   width: 300px;
   background: royalblue;
-  box-sizing: border-box;
+  padding: 16px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/*MY SOLUTION*/
+
+.header {
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 0px;
+  display: flex; /*flex so I can add a gap between the links*/
+  flex-direction: column;
+  gap:10px
+  /*solution doesnt make ul flex. They just add margin bottom to <li>*/
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /*ceil/floor of header/footer respectively*/
+}
+
+body * {
+  flex-grow: 1; /*fills gap created by space between of parent container*/
+}
+
+.header, .footer {
+  max-height: 72px; /*prevent flex-grow from expanding these class elements*/
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  text-align: center;
+  justify-content: center;
+}
+
+.body {
+  display: flex;
+}
+
+.sidebar {
+  flex-shrink: 0; /*stop sidebar from sjrinking in primary axis direction (row)*/
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 32px;
+}
+
+.card {
+  flex-basis: 40%; /*solution doesnt use flex basis*/
+  max-width: 200px; /*solution uses width and not max-width*/
 }

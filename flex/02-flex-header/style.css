@@ -1,6 +1,21 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  /*make container flex*/
+  display: flex;
+  /*align cross axis (vertical when flex direction is row*/
+  align-items: center;
+  /*primary axis centered*/
+  justify-content: center;
+  /*space-between can also be used, and we wouldn't need logo margins
+
+  /*add some padding so flex items don't fill to container dimensions*/
+  padding: 6px;
+}
+
+.header div ul{
+  display: flex;
+  gap: 18px;
 }
 
 .logo {
@@ -9,11 +24,16 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  /*list items have bullet points which use space*/
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 a {
@@ -23,3 +43,4 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
+

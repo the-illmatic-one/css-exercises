@@ -25,3 +25,51 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/*MY SOLUTION*/
+
+
+body {
+  display: flex;
+  flex-direction: column; /*want header and footer at top bottom - so direction is column*/
+  justify-content: space-between; /*push them away from each other*/
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+.left-links,.right-links {
+  list-style-type: none;
+  display: flex;
+  list-style-type: none; /*get rid of bullet points*/
+  padding-left: 0px;
+  gap: 15px;
+}
+
+
+a {
+  text-decoration: none; /*no link underline*/
+}
+
+.header, .footer, a {
+  color: rgb(12, 12, 12);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 8px 12px
+}

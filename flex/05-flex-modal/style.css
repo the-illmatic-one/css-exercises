@@ -67,3 +67,40 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+/*MY SOLUTION*/
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  justify-content: space-between;
+}
+
+
+.modal {
+  display: flex;
+  padding: 15px;
+  gap: 10px;
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.close-button {
+  min-width: 24px;
+}
+
+/*this isn't needed but it did create the gap vertically*/
+.modal {
+  min-height: 190px;
+  min-width: 300px;
+}
